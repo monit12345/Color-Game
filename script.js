@@ -91,8 +91,10 @@ resetButton.addEventListener("click", function () {
 
 
 function colorLeveler(color) {
-    for (var i = 0; i < square.length; i++){
-        square[i].style.backgroundColor = color;
+    for (var i = 0; i < square.length; i++) {
+        if (square[i].style.backgroundColor !== "rgb(35, 35, 35)") {
+            square[i].style.backgroundColor = color;            
+        }
     }
 }
     
